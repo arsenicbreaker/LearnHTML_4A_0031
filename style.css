@@ -1,82 +1,193 @@
 * {
-    box-sizing:content-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: "Segoe UI";
-    background-color: #0d1117;
-    color: #c9d1d9;
-    line-height: 1.6;
+  font-family: "Segoe UI";
+  background-color: #0d1117;
+  color: #c9d1d9;
+  line-height: 1.6;
 }
 
 .accent {
-    color: #3a7ce0;
+  color: #3a7ce0;
 }
 
 header {
-    background-color: rgba(26, 28, 32, 0.9);
-    padding: 1rem 4.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    border-bottom: 1px solid #3a7ce0;
+  background-color: rgba(26, 28, 32, 0.9);
+  padding: 1rem 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #3a7ce0;
 }
 
 nav a {
-    color: #ffffff;
-    font-size: 0.9rem;
-    text-decoration: none;
-    position: relative;
-    padding-bottom: 4px;
-    transition: color 0.3s;
+  color: #ffffff;
+  font-size: 0.9rem;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s;
 }
 
 nav {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
 }
 
 nav a:hover {
-    color: #574e4e;
+  color: #574e4e;
 }
-    
+
+/* Section About me */
+
 #about-me {
-    background-color: #0d1117;
-    padding: 6rem 4.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 3rem;
-    min-height: 70vh;
+  background-color: #0d1117;
+  padding: 6rem 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  min-height: 70vh;
 }
 
 .hero-kiri {
-    max-width: 550px;
+  max-width: 550px;
 }
 
 .hero-kiri h2 {
-    font-size: 3.5rem;
-    font-weight: 800;
-    color: #ffffff;
-    margin-bottom: 0.rem;
-    line-height: 1.1;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0rem;
+  line-height: 1.1;
 }
 
 .hero-kanan img {
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid #21262d;
-    transition: border-color 0.3s;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #21262d;
+  transition: border-color 0.3s;
 }
 
 .hero-kiri p {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
+}
+
+/* Section Skills */
+
+#skills {
+  background-color: #0d1117;
+  padding: 6rem 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+#skills h2 {
+  font-size: 3rem;
+}
+
+.skill-hero ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.skill-hero li {
+  width: 100px;
+  text-align: center;
+}
+
+.skill-hero img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+/* Section Projects */
+
+#projects {
+  background-color: #0d1117;
+  padding: 6rem 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+#projects h2 {
+  font-size: 3rem;
+}
+
+.project-hero {
+  display: flex;
+}
+
+.project-hero div {
+  margin: 10px;
+  padding: 20px;
+  background-color: #3a7ce0;
+}
+
+/* Section Contact */
+#contact {
+  background-color: #0d1117;
+  padding: 6rem 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+#contact h2 {
+  font-size: 3rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.form label {
+  margin-bottom: 0.5rem;
+}
+
+.form input {
+  padding: 0.5rem;
+  background-color: #21262d;
+  color: #c9d1d9;
+  border: 1px solid #3a7ce0;
+}
+
+.form button {
+  padding: 0.5rem;
+  background-color: #3a7ce0;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Section footer */
+footer {
+  background-color: rgba(26, 28, 32, 0.9);;
+  padding: 1rem 4.5rem;
+  text-align: center;
 }
